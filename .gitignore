@@ -1,0 +1,28 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+
+# Ignore migration files
+**/migrations/*.py
+**/migrations/*.pyc
+
+# Keep __init__.py (so Django treats folder as a module)
+!**/migrations/__init__.py
+
+# Media and static files
+media/
+staticfiles/
+
+# Environment
+.env
+venv/
