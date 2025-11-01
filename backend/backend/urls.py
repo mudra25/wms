@@ -24,10 +24,9 @@ from user import views as user_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('api/', include('or.urls')),
-    path('register/', user_view.RegisterView.as_view(), name='register'),
-    path('login/', user_view.MyTokenObtainPairView.as_view(), name='token_obtain_pair'),
-    path('profile/', user_view.UserProfileView.as_view(), name='user_profile'),
+    path('api/register/', user_view.RegisterView.as_view(), name='register'),
+    path('api/login/', user_view.MyTokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('api/profile/', user_view.UserProfileView.as_view(), name='user_profile'),
 
     # JWT Auth endpoints
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
